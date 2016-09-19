@@ -59,8 +59,8 @@ $ipipArray = get_loc($ip);
 include ("IP.class.php");
 $ipLocalData= IP::find($ip);
 echo $ip."<br/>";
-echo $ipipArray[0].$ipipArray[1].$ipipArray[2].$ipipArray[3].' '.$ipipArray[4]."<br/>";
-echo $ipLocalData[0].$ipLocalData[1].$ipLocalData[2].' '.$ipLocalData[3];
+echo implode(" ", $ipipArray)."<br/>";
+echo implode(" ", $ipLocalData);
 ?>
 <br/>
 
